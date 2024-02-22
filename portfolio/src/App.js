@@ -11,6 +11,7 @@ import Experience from './components/Experience';
 import Projects from './components/projects';
 import ProjectDetails from "../src/components/projectdetails";
 import { useState, useEffect } from "react";
+import Contact from './components/Contact';
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -42,7 +43,7 @@ function App() {
           <Projects openModal={openModal} setnewModal={setmodelcall} />
           <Wrapper>
             <Education></Education>
-            {/* <Contact></Contact> */}
+            <Contact></Contact>
           </Wrapper>
           {openModal.state &&
           <ProjectDetails openModal={openModal} setnewModal={setmodelcall}/>}
