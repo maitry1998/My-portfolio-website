@@ -10,7 +10,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Experience from './components/Experience';
 import Projects from './components/projects';
 import ProjectDetails from "../src/components/projectdetails";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Contact from './components/Contact';
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
