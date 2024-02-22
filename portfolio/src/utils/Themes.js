@@ -24,7 +24,6 @@ export const darkTheme = {
 //     black: "#4A4A4A", // Soft black, to keep text readable without harsh contrast
 // };
 
-
 // export const darkTheme = {
 //     bg: "#1A1A2E", // Slightly darker to enhance contrast with text and elements
 //     bgLight: "#232336", // A tad lighter than bg for subtle depth
