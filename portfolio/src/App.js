@@ -42,6 +42,7 @@ function App() {
           <Projects openModal={openModal} setnewModal={setmodelcall} />
           <Wrapper>
             <Education></Education>
+            {/* <Contact></Contact> */}
           </Wrapper>
           {openModal.state &&
           <ProjectDetails openModal={openModal} setnewModal={setmodelcall}/>}
