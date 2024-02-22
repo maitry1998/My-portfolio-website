@@ -106,8 +106,8 @@ export const CardContainer = styled.div`
 `;
 
 
-const Projects = ({ openModal, setModal }) => {
-    const [toggle, setToggle] = useState("all")
+const Projects = ({ openModal, setnewModal }) => {
+    const [toggle, setToggle] = useState("All")
     const toggleOptions = ['All', 'Machine learning', 'Android app', 'Web app'];
     return (
         <Container id="projects">
@@ -126,13 +126,13 @@ const Projects = ({ openModal, setModal }) => {
                 </ToggleButtonGroup>
                 <CardContainer>
                     {
-                        toggle === "all" && projects.map((project) => (
-                            <ProjectCards project={project} openModal={openModal} setOpenModal={setModal} />
+                        toggle === "All" && projects.map((project) => (
+                            <ProjectCards project={project} openModal={openModal} setnewerModal={setnewModal} />
                         ))
                     }
                     {
                         projects.filter((project) => (project.category == toggle)).map((project) => (
-                            <ProjectCards project={project} openModal={openModal} setOpenModal={setModal} />
+                            <ProjectCards project={project} openModal={openModal} setnewerModal={setnewModal} />
                         ))
                     }
                 </CardContainer>
