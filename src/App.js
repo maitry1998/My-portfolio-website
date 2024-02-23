@@ -40,9 +40,9 @@ function App() {
             <Skills></Skills>
             <Experience></Experience>
           </Wrapper>
-          <Projects openModal={openModal} setnewModal={setmodelcall} />
+          {/* <Projects openModal={openModal} setnewModal={setmodelcall} /> */}
           <Wrapper>
-            <Education></Education>
+            {/* <Education></Education> */}
             {/* <Contact></Contact> */}
           </Wrapper>
           <Footer/>
