@@ -9,9 +9,11 @@ import Education from './components/Education';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Experience from './components/Experience';
 import Projects from './components/projects';
-import ProjectDetails from "../src/components/projectdetails";
+import ProjectDetails from "./components/projectdetails";
 import { useState } from "react";
 import Contact from './components/Contact';
+import Footer from "./components/Footer";
+
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -43,8 +45,9 @@ function App() {
           <Projects openModal={openModal} setnewModal={setmodelcall} />
           <Wrapper>
             <Education></Education>
-            <Contact></Contact>
+            {/* <Contact></Contact> */}
           </Wrapper>
+          <Footer/>
           {openModal.state &&
           <ProjectDetails openModal={openModal} setnewModal={setmodelcall}/>}
         </Body>

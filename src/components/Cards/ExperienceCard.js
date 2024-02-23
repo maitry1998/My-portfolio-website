@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
+// import image from "../../../src/data/thinkbridge.svg"
+// import imagethink from "../"
 const Document = styled.img`
     display: none;
     height: 70px;
@@ -157,7 +158,14 @@ const ExperienceCard = ({ expereience }) => {
     return (
         <Card>
             <Top>
-                <Image src={expereience.img}></Image>
+                {expereience.company === "Thinkbridge" ?
+                    (<Image src="/thinkbridge.png" alt="Think"></Image>)
+                    :
+                    expereience.company === "Tops Technologies" ?
+                        (<Image src="/tops.png" alt="Tops"></Image>) :
+                        (<Image src={expereience.img}></Image>)
+                }
+
                 <Body>
                     <Role>{expereience.role}</Role>
                     <Company>{expereience.company}</Company>
@@ -167,21 +175,25 @@ const ExperienceCard = ({ expereience }) => {
             <Description>{expereience?.desc && (
                 <Span>{renderDescriptionWithNewLines(expereience?.desc)}</Span>
             )}
-            <>
-            <br/>
-            <Skills>
-                <b>Skills:</b>
-                {expereience?.skills && <ItemWrapper>
-                    {expereience.skills.map((skill,index)=>(
-                        <Skill>• {skill}</Skill>
-                    ))}
-                </ItemWrapper>}
-               
-            </Skills>
-            </>
+                <>
+                    <br />
+                    <Skills>
+                        <b>Skills:</b>
+                        {expereience?.skills && <ItemWrapper>
+                            {expereience.skills.map((skill, index) => (
+                                <Skill>• {skill}</Skill>
+                            ))}
+                        </ItemWrapper>}
+
+                    </Skills>
+                </>
             </Description>
             {expereience.doc && <a href={expereience.doc} target="new">
-            <Document src={expereience.doc} />
+                {expereience?.imagedoc ?
+                    <Document src={expereience?.imagedoc} />
+                    :
+                    <Document src={expereience?.doc} />
+                }
             </a>}
         </Card>
     )
