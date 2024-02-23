@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import styled, { ThemeProvider } from 'styled-components'
 import { darkTheme } from './utils/Themes';
@@ -11,7 +10,6 @@ import Experience from './components/Experience';
 import Projects from './components/projects';
 import ProjectDetails from "./components/projectdetails";
 import { useState } from "react";
-import Contact from './components/Contact';
 import Footer from "./components/Footer";
 
 const Body = styled.div`

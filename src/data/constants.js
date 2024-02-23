@@ -335,7 +335,7 @@ export const Bio = {
     {
       id: 3,
       img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-      role: "Fullstack Externship",
+      role: "Software Engineer",
       company: "Tops Technologies",
       date: "June 2023 - July 2023",
       desc: "Built an employee management full stack Web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
